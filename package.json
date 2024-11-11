@@ -1,12 +1,14 @@
 {
   "name": "prueba702",
   "version": "0.1.0",
-  "private": true, "homepage": "http://LitziSC.github.io/Litzi_Integrador702",
+  "private": true,
+  "homepage": "http://LitziSC.github.io/Litzi_ProyectoIntegrador702",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "chart.js": "^4.4.6",
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
@@ -18,8 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +41,4 @@
       "last 1 safari version"
     ]
   }
-  
 }
