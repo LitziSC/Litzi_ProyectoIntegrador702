@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Litzi_ProyectoIntegrador702/static/css/main.f855e6bc.css",
-    "main.js": "/Litzi_ProyectoIntegrador702/static/js/main.1adfd401.js",
+    "main.js": "/Litzi_ProyectoIntegrador702/static/js/main.3039fccd.js",
     "static/js/453.ebcd9aff.chunk.js": "/Litzi_ProyectoIntegrador702/static/js/453.ebcd9aff.chunk.js",
     "static/media/logo.svg": "/Litzi_ProyectoIntegrador702/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Litzi_ProyectoIntegrador702/index.html",
     "main.f855e6bc.css.map": "/Litzi_ProyectoIntegrador702/static/css/main.f855e6bc.css.map",
-    "main.1adfd401.js.map": "/Litzi_ProyectoIntegrador702/static/js/main.1adfd401.js.map",
+    "main.3039fccd.js.map": "/Litzi_ProyectoIntegrador702/static/js/main.3039fccd.js.map",
     "453.ebcd9aff.chunk.js.map": "/Litzi_ProyectoIntegrador702/static/js/453.ebcd9aff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.1adfd401.js"
+    "static/js/main.3039fccd.js"
   ]
 }
