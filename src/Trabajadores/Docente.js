@@ -23,17 +23,31 @@ const ListaDocentes = () => {
         return () => clearInterval(intervalId);
     }, []);
 
-    // Datos para la gráfica de edad
-    const edades = docentes.map(docente => docente.edad);
-    const nombres = docentes.map(docente => docente.nombre);
+    // Agrupar y contar docentes por sexo
+    const contarPorSexo = () => {
+        const conteo = { Masculino: 0, Femenino: 0 };
 
-    const dataEdad = {
-        labels: nombres,
+        docentes.forEach(docente => {
+            if (docente.sexo === 'Masculino') {
+                conteo.Masculino += 1;
+            } else if (docente.sexo === 'Femenino') {
+                conteo.Femenino += 1;
+            }
+        });
+
+        return conteo;
+    };
+
+    const conteoSexo = contarPorSexo();
+
+    // Datos para la gráfica de sexo
+    const dataSexo = {
+        labels: ['Masculino', 'Femenino'],
         datasets: [
             {
-                label: 'Edad de Docentes',
-                data: edades,
-                backgroundColor: 'rgba(75,192,192,1)',
+                label: 'Número de Docentes por Sexo',
+                data: [conteoSexo.Masculino, conteoSexo.Femenino],
+                backgroundColor: ['rgba(75,192,192,1)', 'rgba(255,99,132,1)'],
                 borderColor: 'rgba(0,0,0,1)',
                 borderWidth: 2
             }
@@ -66,15 +80,16 @@ const ListaDocentes = () => {
                 </tbody>
             </table>
 
-            {/* Gráfica de edades */}
+            {/* Gráfica de sexo */}
             <div style={{ width: '600px', margin: '50px auto' }}>
-                <h2>Gráfica de Edades</h2>
-                <Bar data={dataEdad} />
+                <h2>Gráfica de Sexo de los Docentes</h2>
+                <Bar data={dataSexo} />
             </div>
         </div>
     );
 };
 
 export default ListaDocentes;
+
 
 
