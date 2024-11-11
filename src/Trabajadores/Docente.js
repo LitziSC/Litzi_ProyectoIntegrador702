@@ -48,18 +48,18 @@ const ListaDocentes = () => {
             <table className="docente-table" style={{ margin: '0 auto', width: '80%', borderCollapse: 'collapse', textAlign: 'center' }}>
                 <thead>
                     <tr style={{ backgroundColor: '#f2f2f2' }}>
-                        <th style={{ padding: '10px', border: '1px solid #ddd' }}>Clave ISSEMYN</th>
+                        <th style={{ padding: '10px', border: '1px solid #ddd' }}>ID</th>
                         <th style={{ padding: '10px', border: '1px solid #ddd' }}>Nombre</th>
-                        <th style={{ padding: '10px', border: '1px solid #ddd' }}>Edad</th>
+                        <th style={{ padding: '10px', border: '1px solid #ddd' }}>Telefono</th>
                         <th style={{ padding: '10px', border: '1px solid #ddd' }}>Sexo</th>
                     </tr>
                 </thead>
                 <tbody>
                     {docentes.map((docente, index) => (
                         <tr key={index}>
-                            <td style={{ padding: '10px', border: '1px solid #ddd' }}>{docente.issemyn}</td>
+                            <td style={{ padding: '10px', border: '1px solid #ddd' }}>{docente.id}</td>
                             <td style={{ padding: '10px', border: '1px solid #ddd' }}>{docente.nombre}</td>
-                            <td style={{ padding: '10px', border: '1px solid #ddd' }}>{docente.edad}</td>
+                            <td style={{ padding: '10px', border: '1px solid #ddd' }}>{docente.telefono}</td>
                             <td style={{ padding: '10px', border: '1px solid #ddd' }}>{docente.sexo}</td>
                         </tr>
                     ))}
